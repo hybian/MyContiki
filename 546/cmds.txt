@@ -1,0 +1,16 @@
+
+
+For SensorTag:
+
+make TARGET=cc26x0-cc13x0 BOARD=sensortag/cc2650 hello-world
+sudo chmod 666 /dev/ttyACM*
+make TARGET=cc26x0-cc13x0 BOARD=sensortag/cc2650 PORT=/dev/ttyACM0 login
+
+
+
+
+For TelosB/Sky:
+
+make TARGET=sky hello-world
+sudo chmod 666 /dev/ttyUSB*
+make TARGET=sky login
